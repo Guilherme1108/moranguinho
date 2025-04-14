@@ -14,7 +14,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
     font-family: 'Comic Sans MS', cursive;
 }
 
@@ -24,6 +23,37 @@ body{
     border-radius: 20px;
 }
 
-a {
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 36px;
+    text-shadow: 2px 2px 10px hotpink;
+}
+
+.easterEgg span {
     color: #ffffff;
+}
+
+.easterEgg:hover span:nth-child(3),
+.easterEgg:hover span:nth-child(7),
+.easterEgg:hover span:nth-child(9) {
+    color: #8f0606;
+    text-shadow: 0 0 12px #8f0606;
+    transition: color 10s ease-in, text-shadow 10s ease-in; /* ease-in começa devagar e acelera no final */
+}
+
+menu a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff66cc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px hotpink;
+    transition: 0.5s ease;
+}
+
+menu a:hover {
+    color: black;
 }
